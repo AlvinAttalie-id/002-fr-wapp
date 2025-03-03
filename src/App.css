@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Unbounded&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Unbounded", cursive;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.title {
+  text-align: center;
+  color: cornsilk;
+  font-size: 40px;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.bg {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(-45deg, #00224d, #5d0e41, #a0153e, #ff204e);
+  background-size: 400% 400%;
+  animation: gradientAnimation 8s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #ffffff;
+}
+
+.input {
+  background-color: rgb(225, 211, 226);
+  color: white;
+  height: 60px;
+  border-radius: 10px;
+  width: 400px;
+  height: 60px;
+}
+
+.group {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.city {
+  margin-top: 2rem;
+}
+
+.city,
+.temp {
+  font-size: 3rem;
+}
+
+.box_container {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.box {
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 220px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.2s;
+}
+
+.box:hover {
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 730px) {
+  .bg_img {
+    padding: 2rem 0;
+  }
+
+  .box_container {
+    flex-direction: column;
+  }
+
+  .box,
+  .input {
+    width: 70vw;
+  }
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
