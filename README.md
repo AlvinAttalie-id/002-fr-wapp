@@ -53,4 +53,4 @@ Pastikan Anda mengganti `appid=YOUR_API_KEY` dengan API key yang valid dari Open
 
 ---
 
-Dikembangkan dengan ❤️ oleh [Nama Anda]
+Dikembangkan dengan ❤️ oleh [Alvin Attalie]
